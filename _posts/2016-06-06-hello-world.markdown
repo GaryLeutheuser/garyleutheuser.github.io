@@ -69,7 +69,7 @@ int main(void) {
 }
 {% endhighlight %}
 
-`C++` is the language that I practice and use the least of these 4, since my school pretty much exclusively uses `Java` in its object-oriented curriculum. Almost all of my knowledge of the language comes from trekking through the first few chapters of [Accelerated C++]. One of the things I find interesting about the languane is the existence of `namespace`s.
+`C++` is the language that I practice and use the least of these 4, since my school pretty much exclusively uses `Java` in its object-oriented curriculum. Almost all of my knowledge of the language comes from trekking through the first few chapters of [Accelerated C++]. One of the things I find interesting about the language is the existence of `namespace`s.
 
 My (limited) understanding of the `namespace` is that it prevents ambiguity - by specifying _which_ 'thing' you are referring to - because potentially, there's more than one. In this case, `std` is the namespace that contains the versions of `cout` and `endl` that I'm using.
 
