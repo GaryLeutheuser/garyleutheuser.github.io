@@ -4,9 +4,13 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+I am a student at the University of Central Florida that likes all things computers, with a special place in my heart for practical topics such as software development. I also like to have a good laugh every once in a while.
 
-You can find the source code for the Jekyll new theme at:
+I've found that discussing computers and their related ideas can get pretty dry, especially when learning. The result of this observation is this blog: I want a place to explore  and express my thoughts on coding and computer science in a lighthearted manner.
+
+This site is built using Jekyll, and this theme is the base Jekyll theme.
+
+You can find the source code for the Jekyll new theme at
 {% include icon-github.html username="jglovier" %} /
 [jekyll-new](https://github.com/jglovier/jekyll-new)
 
