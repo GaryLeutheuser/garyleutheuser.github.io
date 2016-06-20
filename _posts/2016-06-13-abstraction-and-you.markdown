@@ -2,7 +2,7 @@
 layout: post
 title:  "Abstraction and You"
 date:   2016-06-13 11:22:00 -0400
-categories: jekyll update
+categories: abstraction java language
 ---
 Take a moment and think about the journey a computer program goes through on its way to running on your computer. It might look something like this:
 

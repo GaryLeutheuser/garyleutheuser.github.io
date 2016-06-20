@@ -2,7 +2,7 @@
 layout: post
 title:  "Hello, world!"
 date:   2016-06-06 14:54:38 -0400
-categories: jekyll update
+categories: ['hello world', 'java', 'c', 'c++', 'javascript']
 ---
 For this blog's first post, I've decided to do a spin on the classic ["Hello, world!"] programming exercise. For those that are unfamiliar, such a program has one simple goal: print the text "Hello, world!" to the screen. It's a nice little [sanity check] when you're getting to grips with a new language or environment (or perhaps a blog [;) )].
 
