@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Old Algorithms"
+title:  "Algorithms Old and New"
 date:   2016-07-05 11:54:00 -0400
 categories: ['history', 'algorithm']
 ---
