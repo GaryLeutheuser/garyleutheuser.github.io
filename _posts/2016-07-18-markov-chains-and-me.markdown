@@ -46,7 +46,7 @@ Where positions 0, 1, and 2 are as marked here:
          .
 ```
 
-And, the number associated with each "choice" - 1, 0.5, and 0.5 - is the probability that choice will be made (here it is random for each choice, so if there are four ways to go, each will have probability 0.25, and so on). This doesn't need to be the case. The probability of these choices depends on the nature of your system, and all that jazz. For all I know, your favorite direction is left and so you always have at least an 80% chance of going left when your mazing on the weekends.
+And, the number associated with each "choice" - 1, 0.5, and 0.5 - is the probability that choice will be made (here it is random for each choice, so if there are four ways to go, each will have probability 0.25, and so on). This doesn't need to be the case. The probability of these choices depends on the nature of your system, and all that jazz. For all I know, your favorite direction is left and so you always have at least an 80% chance of going left when you're mazing on the weekends.
 
 There's an important distinction we need to make about these choices: in a real maze, you probably wouldn't go back the way you came, since you know it leads to dead end. If you do want to go back, well, you might want to rethink your maze solving strategies. That, or you've ascended _beyond_ the tangible shackles of the maze. You pass through walls like a hot knife through butter. The walls are meaningless, and can no longer contain your righteous spirit.
 
