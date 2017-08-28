@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Markov Chains and Me"
-date:   2016-07-11 11:53:00 -0400
+date:   2016-07-18 11:53:00 -0400
 categories: ['Math', 'Markov Chain']
 ---
 
