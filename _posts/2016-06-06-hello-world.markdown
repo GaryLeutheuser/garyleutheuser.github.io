@@ -47,7 +47,7 @@ Both ideas are really quite lovely: that of clear, verbose expression for the pu
 
 int main(void) {
   printf("Hello, world!\n");
-  return 1;
+  return 0;
 }
 {% endhighlight %}
 
