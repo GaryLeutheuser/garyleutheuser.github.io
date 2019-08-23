@@ -4,10 +4,14 @@ title: About
 permalink: /about/
 ---
 
-I am a student at the University of Central Florida that likes all things computers, with a special place in my heart for practical topics such as software development. I also like to have a good laugh every once in a while.
+My name is Gary Leutheuser - I am an individual that likes all things computers. I also like to have a good laugh every once in a while. Hopefully, these posts can be some form of respite from the myriad of ice-cold treatments that exist on the topics discussed.
 
-I've found that discussing computers and their related ideas can get pretty dry, especially when learning. The result of this observation is this blog: I want a place to explore  and express my thoughts on coding and computer science in a lighthearted manner.
+I studied electrical engineering, and later computer engineering with an emphasis on software systems and algorithms. I could never make up my mind between hardware and software... so I didn't. I really enjoy working on software for embedded systems, which is what I do professionally.
 
+Please note that this is a personal blog, and the opinions expressed are my own.
+\\
+\\
+\\
 This site is built using Jekyll, and this theme is the base Jekyll theme.
 
 You can find the source code for the Jekyll new theme at
@@ -17,3 +21,5 @@ You can find the source code for the Jekyll new theme at
 You can find the source code for Jekyll at
 {% include icon-github.html username="jekyll" %} /
 [jekyll](https://github.com/jekyll/jekyll)
+
+This site is hosted using [GitHub Pages](https://pages.github.com)
