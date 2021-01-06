@@ -6,10 +6,10 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Embedded Stuff
+title: Computing Reflections
 email: g.leutheuser__at__gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  My thoughts related to embedded systems (...and other stuff, too.)
+  My thoughts related to computers and computer-related topics.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://garyleutheuser.github.io" # the base hostname & protocol for your site
 github_username:  garyleutheuser

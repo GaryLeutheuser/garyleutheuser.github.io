@@ -1,0 +1,75 @@
+---
+layout: post
+title:  Arrays
+date:   2020-09-29 19:33:32 -0600
+categories: ['arrays']
+---
+
+The array is perhaps the first data structure that many individuals
+are exposed to. The two dimensional array is extremely common - any
+board game that uses a grid exercises the idea. The number of
+examples are nearly endless - checkers, chess... endless.
+
+Let's start from ground zero. What is an array? It's a particular
+arrangement, in one or more dimensions, of a bunch of the _same
+type_ of objects.
+
+[The simplest array might be this one, in one dimension]:
+
+(Insert picture of box array thing, 1 2 3 4 5 or such)
+
+The most timeless home of the array is perhaps dynamic
+programming. Computing terms of the Fibonacci sequence is such a
+good problem for motivating dynamic programming, that we should
+take a minute _right now[^1]_ to check it out.
+
+First of all - we need to understand the definition of the sequence:
+
+    (F_i means the ith term of the sequence.)
+    
+    Let F_0 = 0, F_1 = 1, and F_n = F_n-1 + F_n-1.
+
+In other words, every term is the sum of the previous two terms,
+starting from the terms `0` and `1`.
+
+A natural first take would be recursive, like the solution below in
+Python.
+
+    def fibonacci(n):
+    """
+    Returns the nth term of he Fibonacci sequence.
+    """
+    if n <= 1:
+        return 1
+    else:
+        return fibonacci(n - 1) + fibonacci(n - 2)
+
+Surely, the solution is elegant, concise, easy to read and verify,
+etc. Basically everything you want in a function. What it isn't
+is a model of efficiency.
+
+(For the `functools` savvy - let's ignore the existence
+of the `lrucache` decorator for the sake of discussion).
+
+Imagine the required computations in a graph - specifically, a
+binary tree. Each term requires computing the two terms prior to
+it. The maximum depth of the tree will be `n` (the longest path
+consists of the one where the immediately preceding term is
+calculated each time). How many nodes are in a full binary tree
+with depth `n`? It's `O(2^n)` nodes. Yikes. Even if that's just an
+unrefined upper bound, it's terrible for even moderate values of
+`n`.
+
+Our first observation is that the same calculations are repeated
+many, many times. How do we avoid this trap?
+
+What we can do is recognize that the solution can be built, one
+term at a time, in `O(n)` time. That is, starting with the first
+two terms, compute the next term, until the desired term is reached.
+
+And this is where the array comes in. We need a good way to access
+the previous two numbers.
+
+[^1]: Seriously. Right now. What are you doing down here?
+
+[The simplest array might be this one, in one dimension]:https://www.youtube.com/watch?v=4J9MRYJz9-4
