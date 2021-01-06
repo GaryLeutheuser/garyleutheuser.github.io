@@ -9,7 +9,7 @@
 title: Computing Reflections
 email: g.leutheuser__at__gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  My thoughts related to computers and computer-related topics.
+  My thoughts on computers and related topics.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://garyleutheuser.github.io" # the base hostname & protocol for your site
 github_username:  garyleutheuser
