@@ -10,15 +10,18 @@ are exposed to. The two dimensional array is extremely common - any
 board game that uses a grid exercises the idea. The number of
 examples are nearly endless - checkers, chess... endless.
 
-Let's start from ground zero. What is an array? It's a particular
-arrangement, in one or more dimensions, of a bunch of the _same
-type_ of objects.
+Let's start from ground zero. What is an array? It's a particular arrangement,
+in one or more dimensions, of a bunch of the _same type_ of objects. Probably
+the most important charactestic of this arrangement is that it provides `O(1)`
+lookup (i.e. fast retrieval of the `i`th element, for any `i`).
 
 [The simplest array might be this one, in one dimension]:
 
-(Insert picture of box array thing, 1 2 3 4 5 or such)
+{:refdef: style="text-align: center;"}
+![Simple array]({{ site.url }}/assets/simpleArray.png)
+{: refdef}
 
-The most timeless home of the array is perhaps dynamic
+One of the most timeless homes of the array is perhaps dynamic
 programming. Computing terms of the Fibonacci sequence is such a
 good problem for motivating dynamic programming, that we should
 take a minute _right now[^1]_ to check it out.
@@ -56,20 +59,54 @@ binary tree. Each term requires computing the two terms prior to
 it. The maximum depth of the tree will be `n` (the longest path
 consists of the one where the immediately preceding term is
 calculated each time). How many nodes are in a full binary tree
-with depth `n`? It's `O(2^n)` nodes. Yikes. Even if that's just an
+with depth `n`? It's `2^n` nodes. Yikes. Even if that's just an
 unrefined upper bound, it's terrible for even moderate values of
 `n`.
 
-Our first observation is that the same calculations are repeated
-many, many times. How do we avoid this trap?
+{:refdef: style="text-align: center;"}
+![Repeated computations are highlighted]({{ site.url }}/assets/redundantFib.png)
+{: refdef}
+
+Our first observation is that the same calculations are repeated many, many
+times (the colored highlights in the image above show repetition in the
+relatively benign case of computing the 4th term). How do we avoid this trap?
 
 What we can do is recognize that the solution can be built, one
 term at a time, in `O(n)` time. That is, starting with the first
 two terms, compute the next term, until the desired term is reached.
 
-And this is where the array comes in. We need a good way to access
-the previous two numbers.
+And this is where the array comes in. We need a good way to access the previous
+two numbers. (I want to take a second to mention that a list would do just as
+well as an array here. We really only need `O(1)` lookup of the two previous
+nodes and `O(1)` adding of an element to the end. A pre-sized[^2] array will do
+nicely, as would a linked list.)
+
+The image below is what the constructed array would look like for the same 4th
+term. Note that each required term in the sequence is only computed once. I've
+also taken the liberty to swap to the actual values of the sequence.
+
+{:refdef: style="text-align: center;"}
+![A better way to calculate]({{ site.url }}/assets/fibArray.png)
+{: refdef}
+
+In the simplest sense - that's dynamic programming. The gist is to break large
+problems down into subproblems such that you can populate a "lookup table" of
+answers to those subproblems. To solve the big problem, build up the solution
+from a library of smaller solutions. This can eliminate a lot of redundant
+operations compared to brute force.
+
+The real art is figuring out how to decompose problems into a sensible
+structure of subproblems (and their combination to form other solutions).
+Something like the [change-making
+problem](https://en.wikipedia.org/wiki/Change-making_problem) would be good to
+explore as a next step.
+
+With these more complicated instances of dynamic programming - requiring more
+sophisticated lookup in arrays of increasing dimensions and size, the qualities
+of the array become indispensible.
 
 [^1]: Seriously. Right now. What are you doing down here?
+
+[^2]: Note that many array implementations do not support dynamic resizing. Of the ones that do - you still have to be careful that the resizing is done efficiently and does not induce excessive / expensive copying.
 
 [The simplest array might be this one, in one dimension]:https://www.youtube.com/watch?v=4J9MRYJz9-4
