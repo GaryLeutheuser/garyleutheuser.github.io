@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Arrays
+title:  'Dynamic programming: a compelling case for arrays'
 date:   2021-03-01 15:24:58 -0600
 categories: ['arrays']
 ---
